@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Ball : MonoBehaviour 
 {
-	public ScreenManager sceneManager;
+	public PongManager sceneManager;
 	public float speed = 2.0f;
 	public float bouceBorderSpeed = 1.5f;
 	public float maxVelocity = 900;

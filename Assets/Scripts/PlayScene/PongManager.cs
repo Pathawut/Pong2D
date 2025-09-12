@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ScreenManager : MonoBehaviour
+public class PongManager : MonoBehaviour
 {
     public enum SceneState
     {

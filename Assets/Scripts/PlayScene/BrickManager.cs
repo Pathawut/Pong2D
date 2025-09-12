@@ -9,7 +9,7 @@ public class BrickManager: MonoBehaviour
 		MultiHit,
     }
 
-	public ScreenManager sceneManager;
+	public PongManager sceneManager;
 
 	public GameObject[] brickPrefabs;
 	public GameObject BrickContainer;
