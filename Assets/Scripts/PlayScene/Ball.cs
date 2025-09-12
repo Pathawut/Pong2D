@@ -29,8 +29,8 @@ public class Ball : MonoBehaviour
     {
 		if (rigid != null && rigid.bodyType == RigidbodyType2D.Dynamic)
         {
-			var v = rigid.velocity;
-			rigid.velocity = Vector2.ClampMagnitude(v, maxVelocity);
+			var v = rigid.linearVelocity;
+			rigid.linearVelocity = Vector2.ClampMagnitude(v, maxVelocity);
 		}
 		
 		if (Input.GetKeyDown(KeyCode.S))
@@ -48,8 +48,8 @@ public class Ball : MonoBehaviour
 	{
 		if (col.collider.tag == "Paddle") 
 		{
-			var vec = rigid.velocity;
-			rigid.velocity = vec * speed;
+			var vec = rigid.linearVelocity;
+			rigid.linearVelocity = vec * speed;
 		}
 		else if (col.collider.tag == "Border")
 		{
@@ -80,7 +80,7 @@ public class Ball : MonoBehaviour
 		if (rigid != null && rectTransform != null)
         {
 			rectTransform.position = startPosition;
-			rigid.velocity = RandomDirection() * 300;
+			rigid.linearVelocity = RandomDirection() * 300;
 		}
 	}
 
@@ -88,7 +88,7 @@ public class Ball : MonoBehaviour
     {
 		if (rigid != null)
 		{
-			previousVelocity = rigid.velocity;
+			previousVelocity = rigid.linearVelocity;
 			rigid.bodyType = RigidbodyType2D.Static;
 		}
 	}
@@ -98,7 +98,7 @@ public class Ball : MonoBehaviour
 		if (rigid != null)
 		{
 			rigid.bodyType = RigidbodyType2D.Dynamic;
-			rigid.velocity = previousVelocity;
+			rigid.linearVelocity = previousVelocity;
 		}
 	}
 

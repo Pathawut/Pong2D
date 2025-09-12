@@ -33,7 +33,7 @@ public class Paddle : MonoBehaviour
 			/**/
 			
 			Vector3 movement = new Vector3(direction, 0.0f, 0.0f);
-			rigid.velocity = (movement * speed);
+			rigid.linearVelocity = (movement * speed);
 		}
 	}
 
