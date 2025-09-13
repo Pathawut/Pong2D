@@ -1,4 +1,4 @@
-using Microsoft.Win32;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -45,6 +45,14 @@ public class MiniGameManager : MonoBehaviour
         if (id >= 0 && id < GameScenes.Length)
         {
             SceneManager.LoadScene(GameScenes[id]);
+        }
+    }
+
+    public void LaunchGame(string gameScene)
+    {
+        if (GameScenes.Contains(gameScene))
+        {
+            SceneManager.LoadScene(gameScene);
         }
     }
 
