@@ -24,8 +24,9 @@ public class MiniGameManager : MonoBehaviour
     }
 
     // Game System
+
     [SerializeField] private string[] GameScenes;
-    [SerializeField] private IMiniGame currentGame;
+    private IMiniGame currentGame;
 
     
     void Awake()

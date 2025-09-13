@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OtherGameScene : MonoBehaviour, IMiniGame
+public class ClickCountGameScene : MonoBehaviour, IMiniGame
 {
-    public string GameName => "Other";
+    public string GameName => "ClickCount";
 
     public void ClickStart()
     {
@@ -18,7 +18,7 @@ public class OtherGameScene : MonoBehaviour, IMiniGame
     public void Initialize()
     {
         MiniGameManager.Instance.RegisterGame(this);
-        SceneManager.LoadScene("OtherGamePlay");
+        SceneManager.LoadScene("ClickCountGamePlay");
     }
 
     public void EndGame()

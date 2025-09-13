@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1196431595}
   - component: {fileID: 1196431596}
   m_Layer: 0
-  m_Name: OtherStartScene
+  m_Name: ClickCountStartScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,7 +747,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Other Game
+  m_Text: Click Count Game
 --- !u!222 &1460011466
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/PongStart.unity
     guid: 8fe8d71db23af624ba5687f9c47202bc
   - enabled: 1
-    path: Assets/Scenes/GamePlay.unity
+    path: Assets/Scenes/PongGamePlay.unity
     guid: 144c9583b5729524aa973e4bb059f50f
   - enabled: 1
-    path: Assets/Scenes/OtherStart.unity
+    path: Assets/Scenes/ClickCountStart.unity
     guid: fead3ef942f308040847ca1dc6e9b0ba
   - enabled: 1
-    path: Assets/Scenes/OtherGamePlay.unity
+    path: Assets/Scenes/ClickCountGamePlay.unity
     guid: d4d384f5403c1df40b64c461c6b33d30
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

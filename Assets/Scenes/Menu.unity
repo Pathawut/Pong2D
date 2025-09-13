@@ -429,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameScenes:
   - PongStart
-  - OtherStart
+  - ClickCountStart
 --- !u!4 &1185101997
 Transform:
   m_ObjectHideFlags: 0
@@ -967,5 +967,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1939140531}
   - {fileID: 506707198}
-  - {fileID: 1185101997}
   - {fileID: 1710159922}
+  - {fileID: 1185101997}

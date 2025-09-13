@@ -19,7 +19,7 @@ public class PongScene : MonoBehaviour, IMiniGame
     public void Initialize()
     {
         MiniGameManager.Instance.RegisterGame(this);
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("PongGamePlay");
     }
 
 
