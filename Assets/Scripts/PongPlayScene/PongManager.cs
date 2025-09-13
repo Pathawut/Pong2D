@@ -160,7 +160,7 @@ public class PongManager : MonoBehaviour
         {
             if((Input.touchCount > 0) || (Input.anyKey))
             {
-                SceneManager.LoadScene("StartGame");
+                SceneManager.LoadScene("PongStart");
             }
         }
     }
