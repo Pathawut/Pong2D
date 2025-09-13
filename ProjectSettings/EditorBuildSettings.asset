@@ -6,9 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartGame.unity
+    path: Assets/Scenes/Menu.unity
+    guid: 26cfb36111c650e43aa62572b7586d04
+  - enabled: 1
+    path: Assets/Scenes/PongStart.unity
     guid: 8fe8d71db23af624ba5687f9c47202bc
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 144c9583b5729524aa973e4bb059f50f
+  - enabled: 1
+    path: Assets/Scenes/OtherStart.unity
+    guid: fead3ef942f308040847ca1dc6e9b0ba
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

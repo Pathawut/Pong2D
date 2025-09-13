@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IGame
+public interface IMiniGame
 {
     string GameName { get; }
     void Initialize();

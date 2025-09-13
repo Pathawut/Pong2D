@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OtherGameScene : MonoBehaviour, IGame
+public class OtherGameScene : MonoBehaviour, IMiniGame
 {
     public string GameName => "Other";
 
@@ -17,13 +17,13 @@ public class OtherGameScene : MonoBehaviour, IGame
 
     public void Initialize()
     {
-        GameManager.Instance.RegisterGame(this);
+        MiniGameManager.Instance.RegisterGame(this);
         //SceneManager.LoadScene("OtherGamePlay");
     }
 
     public void EndGame()
     {
-        GameManager.Instance.EndCurrentGame();
+        MiniGameManager.Instance.EndCurrentGame();
         SceneManager.LoadScene("Menu");
     }
 }

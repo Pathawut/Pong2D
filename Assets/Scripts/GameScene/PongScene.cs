@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PongScene : MonoBehaviour, IGame
+public class PongScene : MonoBehaviour, IMiniGame
 {
     public string GameName => "Pong";
 
@@ -18,14 +18,14 @@ public class PongScene : MonoBehaviour, IGame
 
     public void Initialize()
     {
-        GameManager.Instance.RegisterGame(this);
+        MiniGameManager.Instance.RegisterGame(this);
         SceneManager.LoadScene("GamePlay");
     }
 
 
     public void EndGame()
     {
-        GameManager.Instance.EndCurrentGame();
+        MiniGameManager.Instance.EndCurrentGame();
         SceneManager.LoadScene("Menu");
     }
 }

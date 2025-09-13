@@ -2,21 +2,21 @@ using Microsoft.Win32;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class MiniGameManager : MonoBehaviour
 {
     // -------- Singleton --------
-    private static GameManager _instance;
-    public static GameManager Instance
+    private static MiniGameManager _instance;
+    public static MiniGameManager Instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = Object.FindFirstObjectByType<GameManager>();
+                _instance = Object.FindFirstObjectByType<MiniGameManager>();
                 if (_instance == null)
                 {
-                    var go = new GameObject("GameManager");
-                    _instance = go.AddComponent<GameManager>();
+                    var go = new GameObject("MiniGameManager");
+                    _instance = go.AddComponent<MiniGameManager>();
                 }
             }
             return _instance;
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     // Game System
     [SerializeField] private string[] GameScenes;
-    [SerializeField] private IGame currentGame;
+    [SerializeField] private IMiniGame currentGame;
 
     
     void Awake()
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RegisterGame(IGame game)
+    public void RegisterGame(IMiniGame game)
     {
         if (currentGame != game)
         {
