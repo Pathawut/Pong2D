@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OtherStart.unity
     guid: fead3ef942f308040847ca1dc6e9b0ba
+  - enabled: 1
+    path: Assets/Scenes/OtherGamePlay.unity
+    guid: d4d384f5403c1df40b64c461c6b33d30
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

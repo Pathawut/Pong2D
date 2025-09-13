@@ -18,7 +18,7 @@ public class OtherGameScene : MonoBehaviour, IMiniGame
     public void Initialize()
     {
         MiniGameManager.Instance.RegisterGame(this);
-        //SceneManager.LoadScene("OtherGamePlay");
+        SceneManager.LoadScene("OtherGamePlay");
     }
 
     public void EndGame()
